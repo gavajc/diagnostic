@@ -3,7 +3,7 @@ TARGET = diagnostic
 
 # Compilation flags with C++17 enforcement and optimization overrides
 CXXFLAGS += -O3 -std=c++17 -Wall -I. -I./includes
-LIBS += -luci -lubox -pthread
+LIBS += -luci -lubox -lcrypto -lssl -pthread
 
 # Source files matching your project layout
 SRCS = main.cpp configmanager.cpp httpclient.cpp
